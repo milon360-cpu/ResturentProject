@@ -1,0 +1,383 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: black; */
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/* ------------------------------BASIC SETIP-----------------------------  */
+
+/* ------------------------------START HEADER SECTION-----------------------------  */
+.nav-bar
+{
+ background-color: teal;
+ padding: 20px;
+}
+.nav-logo
+{
+ float: left;
+ padding-left: 100px;
+
+}
+.nav-menu
+{
+ float: left;
+}
+.nav-menu ul
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 10%;
+   
+
+}
+.nav-menu ul li
+{
+    list-style: none;
+    margin-right: 2%;
+    padding: 5px 15px;
+    transition: .4s;
+}
+.nav-menu ul li a
+{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+.nav-menu ul li:hover
+{
+ transform: scale(1.2);
+}
+.nav-bar::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* ------------------------------END HEADER SECTION-----------------------------  */
+
+/* ------------------------------START BANNER SECTION-----------------------------  */
+    .banner-section
+    {
+        background-image: url("cover.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 50px;
+        text-align: center; 
+    }
+    .banner-section h1 
+    {
+        font-size: 50px;
+        background-color: rgb(187, 221, 36);
+        width: 500px;
+        height: 200px;
+        padding: 20px;
+        margin: 0px auto;
+        color: rgb(59, 28, 28);
+        font-family:'Handell', cursive;
+        border-radius: 20px;
+       
+    }
+    .banner-section p
+    {
+        font-size: 40px;
+        background-color: tomato;
+        width: 500px;
+        height: 150px;
+        margin: 0px auto;
+        margin-top: 1%;
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .btn 
+    {
+        padding: 20px 60px;
+        margin: 1% 0%;
+        font-size: 25px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+        transition:.4s;
+
+    }
+    .btn:hover 
+    {
+        transform: scale(1.2);
+    }
+    .banner-section::after
+    {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+/* ------------------------------END BANNER SECTION-----------------------------  */
+
+/* ------------------------------START ABOUT SECTION-----------------------------  */
+    .about-me 
+    {
+        background-color: rgb(5, 75, 75);
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .about-me p
+    {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 35px;
+        color: rgb(255, 255, 255);
+    }
+    .about-me h1 
+    {
+        font-size: 30px;
+        color: white;
+    }
+    #about-hr
+    {
+        width: 150px;
+        margin: 0px auto;
+        border: dotted 2px white;
+        border-bottom: none;
+       
+    }
+    .about-me ::after
+    {
+        content: '';
+        display: table;
+        clear: both;
+    }
+/* ------------------------------START ABOUT SECTION-----------------------------  */
+
+/* ------------------------------START FOOD ITEM SECTION-----------------------------  */
+.card_1_
+{
+   
+    float: left;
+    cursor: pointer;
+   
+}
+.card_1
+{
+    margin-right: 2%;
+    background-color: turquoise;
+    transition: .4s;
+    transition-timing-function: linear;
+}
+.card_1:hover 
+{
+    transform: scale(1.1);
+}
+.dis
+{
+    padding-left: 10px;
+}
+
+.card_1 img
+{
+    width: 100%;
+}
+.card_2
+{
+    margin-right: 2%;
+    background-color: turquoise;
+    transition: .4s;
+    transition-timing-function: linear;
+}
+.card_2:hover
+{
+    transform: scale(1.1);
+}
+.card_2_
+{
+    float: left;
+  
+}
+.card_2 img
+{
+    width: 100%;
+    height: 250px;
+}
+.card_3
+{
+    margin-right: 2%;
+    background-color: turquoise;
+    transition: .4s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+.card_3:hover
+{
+    transform: scale(1.1);
+}
+.card_3_
+{
+    float: left;
+  
+}
+.card_3 img
+{
+    width: 100%;
+    height: 250px;
+}
+.card_4
+{
+  
+    background-color: turquoise;
+    transition: .4s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+.card_4:hover
+{
+    transform: scale(1.1);
+}
+.card_4_
+{
+    float: left;
+  
+}
+.card_4 img
+{
+    width: 100%;
+    height: 250px;
+}
+.card-container p
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+.card-container h1
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: tomato;
+    margin-right: 2%;
+    border-radius: 5px;
+}
+.card-container
+{
+   padding: 10px;
+  
+}
+.card-container::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ----------------RESPONSIVE-------------------  */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* -------------768PX-------------- */
+@media screen and (max-width:768px)
+{
+/* --------------------HEADER------------------ */
+    [class*="col-"]
+    {
+        width: 100%;
+    }
+    .nav-logo
+    {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .nav-menu 
+    {
+        text-align: center;
+    }
+    .nav-menu ul
+    {
+        flex-direction: column;
+        margin-top: 2%;
+        margin-right: 0%;
+    }
+    .nav-menu ul li a:hover 
+    {
+        border: none;
+    }
+    .nav-menu ul li 
+    {
+        padding: 8px 0px;
+        width: 90%;
+        background-color: rgb(30, 73, 73);
+        margin-top: 2%;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul li:hover 
+    {
+       background-color: tomato;
+    }
+
+
+/* ---------------------BANNER-------------------------- */
+.banner-section
+    {
+       
+
+        padding:20px;
+        text-align: center; 
+        
+    }
+    .banner-section h1
+    {
+        width: 100%;
+        height: auto;
+     
+       
+    }
+    .banner-section p 
+    {
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+/* -------------------FOOD ITEM----------------------------- */
+    .card_2_
+    {
+        margin-top: 2%;
+    }
+    .card_3_
+    {
+        margin-top: 2%;
+    }
+    .card_4_
+    {
+        margin-top: 2%;
+        
+    }
+    .card_4
+    {
+        margin-right: 2%;
+    }
+}
